@@ -25,6 +25,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/connexion', {
+        templateUrl: 'views/connexion.html',
+        controller: 'ConnexionCtrl',
+        controllerAs: 'connexion'
+      })
       .otherwise({
         redirectTo: '/'
       });
