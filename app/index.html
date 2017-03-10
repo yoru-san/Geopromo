@@ -22,83 +22,22 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-      <div layout="column">
-        <md-toolbar>
-          <div class="md-toolbar-tools">
-            <h2 md-truncate flex>geopromoApp</h2>
-            <md-button class="md-primary md-hue-1">Log in</md-button>
-            <md-button class="md-primary md-hue-1">Sign in</md-button>
-          </div>
-        </md-toolbar>
+  <div layout="column">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2 md-truncate flex>geopromoApp</h2>
+        <md-button class="md-primary md-hue-1">Log in</md-button>
+        <md-button class="md-primary md-hue-1">Sign in</md-button>
       </div>
-
-      <div layout="row" layout-align="center center">
-
-        <div ng-cloak>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom>
-      <md-tab label="one">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Version utilisateur</h1>
-          <md-button class="md-raised md-primary">Button</md-button>
-          <md-button class="md-warn">warn</md-button>
-          <md-button class="md-accent">Accent</md-button>
-        </md-content>
-      </md-tab>
-
-
-      <md-tab label="two">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Version commerçant</h1>
-          <div layout="row">
-            <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-              <md-card-title>
-                <md-card-title-text>
-                  <span class="md-headline">Card with image</span>
-                  <span class="md-subhead">Large</span>
-                </md-card-title-text>
-                <md-card-title-media>
-                  <div class="md-media-lg card-media"></div>
-                </md-card-title-media>
-              </md-card-title>
-              <md-card-actions layout="row" layout-align="end center">
-                <md-button>Action 1</md-button>
-                <md-button>Action 2</md-button>
-              </md-card-actions>
-            </md-card>
-
-            <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-              <md-card-title>
-                <md-card-title-text>
-                  <span class="md-headline">Card with image</span>
-                  <span class="md-subhead">Large</span>
-                </md-card-title-text>
-                <md-card-title-media>
-                  <div class="md-media-lg card-media"></div>
-                </md-card-title-media>
-              </md-card-title>
-              <md-card-actions layout="row" layout-align="end center">
-                <md-button>Action 1</md-button>
-                <md-button>Action 2</md-button>
-              </md-card-actions>
-            </md-card>
-          </div>
-        </md-content>
-      </md-tab>
-    </md-tabs>
-  </md-content>
-</div>
-
-
-
-
-
+    </md-toolbar>
   </div>
+  
+  <div ng-view=""></div>
 
-      <footer>
-        <md-toolbar class="md-scroll-shrink">
-        </md-toolbar>
-      </footer>
+  <footer>
+    <md-toolbar class="md-scroll-shrink">
+    </md-toolbar>
+  </footer>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
