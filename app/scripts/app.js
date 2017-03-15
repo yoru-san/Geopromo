@@ -36,7 +36,7 @@ angular
   })
   .config(function ($mdThemingProvider) {
      $mdThemingProvider.theme('default')
-        .primaryPalette('teal')
+        .primaryPalette('indigo')
         .accentPalette('blue-grey')
-        .warnPalette('red');
+        .warnPalette('orange');
   });
