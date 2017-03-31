@@ -30,6 +30,11 @@ angular
         controller: 'ConnexionCtrl',
         controllerAs: 'connexion'
       })
+      .when('/backoffice', {
+        templateUrl: 'views/backoffice.html',
+        controller: 'BackofficeCtrl',
+        controllerAs: 'backoffice'
+      })
       .otherwise({
         redirectTo: '/'
       });
