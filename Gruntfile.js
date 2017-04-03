@@ -1,4 +1,4 @@
-// Generated on 2017-03-08 using generator-angular 0.15.1
++// Generated on 2017-03-08 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -80,9 +80,9 @@ module.exports = function (grunt) {
       proxies: [
         {
           context: '/rest',
-          host: 'geopromo.localhost',
+          host: 'GeoPromo',
           port: 80,
-          https: false
+          changeOrigin : true
         }
       ],
       livereload: {
@@ -391,6 +391,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
+            'rest/**/*.*',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
