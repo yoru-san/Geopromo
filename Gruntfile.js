@@ -80,8 +80,8 @@ module.exports = function (grunt) {
       proxies: [
         {
           context: '/rest',
-          host: 'GeoPromo',
-          port: 80,
+          host: 'geopromo.localhost',
+          port: 35735,
           changeOrigin : true
         }
       ],
