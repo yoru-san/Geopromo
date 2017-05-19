@@ -85,6 +85,10 @@ body {
 #splash {
   background-image: url(/images/shopping5.jpg);
   background-size: cover;
-  color: white; 
+  color: white;
   min-height: 800px;
+}
+
+h1, h2,h3s {
+    font-family: 'Source Sans Pro', sans-serif !important;
 }

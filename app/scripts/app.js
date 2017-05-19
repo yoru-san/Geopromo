@@ -35,6 +35,21 @@ angular
         controller: 'BackofficeCtrl',
         controllerAs: 'backoffice'
       })
+      .when('/createDiscount', {
+        templateUrl: 'views/creatediscount.html',
+        controller: 'CreatediscountCtrl',
+        controllerAs: 'createDiscount'
+      })
+      .when('/userProfile', {
+        templateUrl: 'views/userprofile.html',
+        controller: 'UserprofileCtrl',
+        controllerAs: 'userProfile'
+      })
+      .when('/readDiscount', {
+        templateUrl: 'views/readdiscount.html',
+        controller: 'ReaddiscountCtrl',
+        controllerAs: 'readDiscount'
+      })
       .otherwise({
         redirectTo: '/'
       });
