@@ -1,1 +1,33 @@
-<p>This is the createDiscount view.</p>
+<div layout="row" layout-align="center center">
+  <div flex="70">
+<h1>Création de réduction</h1>
+
+<form class="" action="index.html" method="post">
+  <md-input-container class="md-icon-float md-block">
+    <label>Nom de la réduction</label>
+    <input type="text">
+  </md-input-container>
+  <md-input-container class="md-icon-float md-block">
+    <label>Description</label>
+    <input type="text">
+  </md-input-container>
+  <div layout="row">
+    <md-input-container class="md-icon-float md-block">
+      <label>Début</label>
+      <md-datepicker ng-model="ctrl.myDate" md-placeholder="date de début"></md-datepicker>
+    </md-input-container>
+    <md-input-container class="md-icon-float md-block">
+      <label>Fin</label>
+      <md-datepicker ng-model="ctrl.myDate" md-placeholder="date de fin"></md-datepicker>
+    </md-input-container>
+  </div>
+  <md-input-container class="md-icon-float md-block">
+    <md-chips ng-model="ctrl.roFruitNames" name="fruitName" readonly="ctrl.readonly"
+    md-removable="ctrl.removable" md-max-chips="5" placeholder="Catégorie de clients">
+  </md-chips>
+</md-input-container>
+<md-button>Créer</md-button>
+
+</div>
+</div>
+</form>
