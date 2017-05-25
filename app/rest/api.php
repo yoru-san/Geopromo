@@ -110,11 +110,14 @@ class API extends REST
 }
 
 require_once("UsersController.php");
+require_once("DiscountsController.php");
+
 
 $controllers = array();
 
 //Ajout des controllers
 array_push($controllers, "UsersController");
+array_push($controllers, "DiscountsController");
 
 //Gestion du service
 for ($i = 0; $i < count($controllers); $i++) {

@@ -50,6 +50,16 @@ angular
         controller: 'ReaddiscountCtrl',
         controllerAs: 'readDiscount'
       })
+      .when('/spaceDiscount', {
+        templateUrl: 'views/spacediscount.html',
+        controller: 'SpacediscountCtrl',
+        controllerAs: 'spaceDiscount'
+      })
+      .when('/spaceDiscount', {
+        templateUrl: 'views/spacediscount.html',
+        controller: 'SpacediscountCtrl',
+        controllerAs: 'spaceDiscount'
+      })
       .otherwise({
         redirectTo: '/'
       });
